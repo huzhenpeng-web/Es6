@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //Set结构的实例与数组一样 也拥有forEach方法 用于对某个成员执行某种该操作 没有返回值
+        let s = new Set(['hzp', '666'])
+        s.forEach((key, value, set) => { //key表示键 value表示值 set表示本身
+            console.log(value);
+            console.log(value2);
+            console.log(set);
+        })
+        console.log('-----------');
+        let arr = [1, 2, 3]
+        arr.forEach((value, index, array) => { //valule-值 index-索引 array-本身
+            console.log(value);
+            console.log(index);
+            console.log(array);
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //1.具有块级作用域
+        // if (true) {
+        //     const a = 20
+        //     console.log(a);
+        //     if (true) {
+        //         const a = 10
+        //         console.log(a);
+        //     }
+        // }
+        // console.log(a); //not defined
+
+        //2.声明常量时必须赋值
+        // const num;
+        // console.log(num); //Missing initializer in const declaration
+
+        //3.常量赋值后 值(内存地址)不能修改
+        // const a = 10
+        // a = 20
+        // console.log(a); //Assignment to constant variable.
+
+        const arr = [100, 200]
+        arr[0] = 'a'
+        arr[1] = 'b'
+        console.log(arr);
+        arr = ['a', 'b']
+        console.log(arr); //Assignment to constant variable.
+    </script>
+</body>
+
+</html>

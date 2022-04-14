@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //1.let声明的变量只在所处于的块级有效
+
+        // if (true) {
+        //     let a = 10
+        //     console.log("a=" + a);
+        //     if (true) {
+        //         let b = 20
+        //         console.log("b=" + b);
+        //     }
+        //     console.log(b);
+        // }
+        // console.log(a); //a is not defined
+        // let c = 1
+        // console.log(c);
+
+        console.log('---------');
+
+        //2.防止循环变量变成全局变量
+        // for (let i = 0; i < 5; i++) {
+        //     console.log(i);
+        // }
+
+        console.log('---------');
+
+        //3.不存在变量提升  必须要先声明再使用
+        // console.log(num);
+        // let num = 20
+
+        // console.log('---------');
+
+
+        //4.暂时性死区
+        var str = 20
+        if (true) { //使用let就表示块级里的str和外面的str无关
+            console.log(str);
+            let str = 'abc';
+
+        }
+    </script>
+</body>
+
+</html>

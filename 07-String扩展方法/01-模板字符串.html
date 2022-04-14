@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div></div>
+    <script>
+        let age = 20
+        let name = '张三'
+        let person = `${name}的年龄为${age}`
+        console.log(person);
+
+        var divContent = document.querySelector('div')
+
+        let obj = {
+                name: 'hzp',
+                age: 19
+            }
+            //模板字符串可以换行
+        let html = `
+        <div> 
+            <span>${obj.name}</span>
+            <span>${obj.age}</span>
+        </div>
+        `
+        console.log(html);
+        divContent.innerHTML = html
+
+        const fn = () => {
+            return 666
+        }
+        let ht = `fn()返回值为${fn()}`
+        console.log(ht);
+    </script>
+</body>
+
+</html>

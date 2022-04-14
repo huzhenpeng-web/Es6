@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //用于找出第一个符合条件的数组成员位置 没有返回-1
+        let arr = [1, 5, 10, 15]
+        let index = arr.findIndex((value, index) => value > 9)
+        let index2 = arr.findIndex((value, index) => value > 20)
+        console.log(index);
+        console.log(index2);
+    </script>
+</body>
+
+</html>
